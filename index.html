@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function changeFans()
+        {
+            calculate();
+        }
+
+        function changeMessages()
+        {
+            calculate();
+        }
+
+        function calculate(){
+            var value = ($('#myRange1').val() * $('#myRange2').val() * 0.1).toFixed(2);
+            $('#fans_count').text("Number of fans: " + $('#myRange1').val());
+            $('#message_count').text("Chat messages sent: " + $('#myRange2').val());
+            $('#moneyCal').text("You could earn $" + value + " per month")
+
+        }
+        $( document ).ready(function() {
+            calculate();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header_container">
+        <img src="./assets/tweestar-logo-white.png" class="header_logo">
+        <div class="header_menu_bar">
+            <a href="#">
+                <div class="btn">LOGIN</div>
+            </a>
+
+            <a href="#">
+                <div class="btn">SIGN UP</div>
+            </a>
+        </div>
+    </div>
+    <div class="get_started">
+        <div class="getstart_info_start">
+            <h2 class="h2_getstarted">GETTING STARTED</h2>
+            <div class="step_container">
+                <div class="stepdiv_left">
+                    <i class="step_icon fa fa-sign-in"></i>
+                    <div class="info_step_container">
+                        <p class="step_info_title">Sign Up</p>
+                        <p class="step_info_description">No credit card is required. Sign up and get free 60tokens to spend it on your favorite model.</p>
+                    </div>
+                </div>
+
+                <img src="./assets/arrow.png" class="getstarted_arrow"/>
+
+                <div class="stepdiv">
+                    <i class="step_icon fa fa-address-book"></i>
+                    <div class="info_step_container">
+                        <p class="step_info_title">Add Contact</p>
+                        <p class="step_info_description">Add your model or fan through telephone number or his nickname. When you two connect, the real adventure begin.</p>
+                    </div>
+                </div>
+
+                <img src="./assets/arrow.png" class="getstarted_arrow"/>
+
+                <div class="stepdiv_right">
+                    <i class="step_icon fa fa-comments-o"></i>
+                    <div class="info_step_container">
+                        <p class="step_info_title">Chat</p>
+                        <p class="step_info_description">Send messages and pictures through our Chat platform or through our app.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+    <div class="div_user_story">
+        <div class="div_user_story_info">
+            <h2 class="h2_user_story">Fans Story</h2>
+
+            <div class="div_story_flow">
+                <div class="div_story_box">
+                    <img src="./assets/laptop-user-1-1179329.png" class="icon_story_box">
+                    <p class="text_story_box">Fans buy tokens with credit card</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <div class="div_story_box_right">
+                    <img src="./assets/money.png" class="icon_story_box">
+                    <p class="text_story_box">Tokens shows on Fans account</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <div class="div_story_box">
+                    <img src="./assets/girlsearch.png" class="icon_story_box">
+                    <p class="text_story_box">Fans can find and add his favorite models</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <div class="div_story_box_right">
+                    <img src="./assets/LIVE_CHAT-512.png" class="icon_story_box">
+                    <p class="text_story_box">Chat with models for tokens in chat platform or app</p>
+                </div>
+            </div>
+
+            <!-- <div class="div_story_flow">
+                <div class="div_story_box_single">
+                    <img src="./assets/province-purchase-sub-manufacturers-purchase-retail-icon-with-purchase-png-512_512.png" class="icon_story_box">
+                    <p class="text_story_box">Fans can buy for tokens model private content (pictures,videos).</p>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+
+    <div class="div_verified_model">
+        <div class="div_verified_model_info">
+            <div class="div_verified_model_content">
+                <div class="div_verified_model_title">
+                    <img src="./assets/1024px-Twitter_Verified_Badge.svg.png" class="icon_verified">
+                    <p class="text_verified_model_title">Tokens shows on users account</p>
+                </div>
+                <p class="text_verified_model_description">
+                    All models on this site have been verified through background checks and the submission of legal ID's to guarentee they are who they say they are.
+                </p>
+            </div>
+        </div>
+    </div>  
+
+    <div class="div_model_story">
+        <div class="div_user_story_info">
+            <h2 class="h2_user_story">Model Story</h2>
+            <div class="div_story_flow">
+                <div class="div_story_box">
+                    <img src="./assets/chatmoney.png" class="icon_story_box">
+                    <p class="text_story_box">Model set price for chat</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <div class="div_story_box_right">
+                    <img src="./assets/LIVE_CHAT-512.png" class="icon_story_box">
+                    <p class="text_story_box">When user send her message and model answer on it, tokens are added on model account</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <div class="div_story_box">
+                    <img src="./assets/Untitled-7 copy.png" class="icon_story_box">
+                    <p class="text_story_box">Model have many money withdraw options</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <div class="div_story_box_right">
+                    <img src="./assets/province-purchase-sub-manufacturers-purchase-retail-icon-with-purchase-png-512_512.png" class="icon_story_box">
+                    <p class="text_story_box">Fans can buy for tokens model private content (pictures,videos).</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <a href="#" style="margin-left: auto;margin-right: auto;">
+                    <div class="btn">JOIN NOW</div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- <div class="div_model_story">
+        <div class="div_user_story_info">
+            <h2 class="h2_user_story">Model Story</h2>
+
+            <div class="div_story_flow">
+                <div class="div_story_box">
+                    <img src="./assets/chatmoney.png" class="icon_story_box">
+                    <p class="text_story_box">Model set price for chat</p>
+                </div>
+
+                <div class="div_story_box1">
+                    <img src="./assets/LIVE_CHAT-512.png" class="icon_story_box">
+                    <p class="text_story_box">When user send her message and model answer on it, tokens are added on model account</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <div class="div_story_box">
+                    <img src="./assets/Untitled-7 copy.png" class="icon_story_box">
+                    <p class="text_story_box">Model have many money withdraw options</p>
+                </div>
+
+                <div class="div_story_box1">
+                    <img src="./assets/province-purchase-sub-manufacturers-purchase-retail-icon-with-purchase-png-512_512.png" class="icon_story_box">
+                    <p class="text_story_box">Fans can buy for tokens model private content (pictures,videos).</p>
+                </div>
+            </div>
+
+            <div class="div_story_flow">
+                <a href="#" style="margin-left: auto;margin-right: auto;">
+                    <div class="btn join">JOIN NOW</div>
+                </a>
+            </div>
+            
+        </div>
+    </div> -->
+
+    <div class="div_slide">
+        <div class="getstart_info">
+            <h2 class="h2_getstarted_money" id="moneyCal">You could earn $29,025 per month*</h2>
+            <p class="token_value">1token is 0.10$</p>
+            <div class="div_slider_container">
+                <p class="slider_label" id="fans_count">Number of fans</p>
+                <div class="div_slider_box">
+                    <input type="range" min="100" max="5000" class="slider" value="1000" id="myRange1" oninput="changeFans()">
+                </div>
+            </div>
+
+            <div class="div_slider_container">
+                <p class="slider_label" id="message_count">Chat messages sent</p>
+                <div class="div_slider_box">
+                    <input type="range" min="100" max="5000" class="slider" value="500" id="myRange2" oninput="changeMessages()">
+                </div>
+            </div>
+            
+        </div>
+    </div>  
+    <div class="footer_container">
+        <div class="footer_info">
+            <img src="./assets/tweestar-logo-white.png" class="header_logo">
+            <p class="footer_description">2020 @Copyright Reserved. Tweestar.com</p>
+        </div>
+        
+        <div class="header_menu_bar">
+            <img src="./assets/android.png" class="store_icon"/>
+            <img src="./assets/ios.png" class="store_icon"/>
+        </div>
+    </div>
+</body>
+</html>
+
